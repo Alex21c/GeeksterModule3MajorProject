@@ -18,9 +18,8 @@
   </head>
   <body>    
     <h1 class="displayNone">Aria Business Solutions</h1>
-    <header>
-      <div class="shadowBox"></div>
-      <nav>
+    <header id="home">      
+      <nav id="primaryNavigation" class="nav">
         <h2 class="displayNone">Primary Navigation</h2>
         <a href="#"><img class="logo" src="Images/logo.svg" alt="Logo"></a>
         <ul>
@@ -31,27 +30,31 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#about" class="navAboutLink"><span>About</span><i class="fa-sharp fa-solid fa-caret-down"></i></a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="#" class="hexagonBgImg"><i class="fontAwesomeIcon fa-brands fa-facebook-f"></i></a></li>
-          <li><a href="#" class="hexagonBgImg"><i class="fontAwesomeIcon fa-brands fa-twitter"></i></a></li>
+          <li>
+            <a href="#" class="hexagonBgImg"><i class="fontAwesomeIcon fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="hexagonBgImg"><i class="fontAwesomeIcon fa-brands fa-twitter"></i></a>
+          </li>
         </ul> 
       </nav>
       
-      <div>
+      <div class="heroContent">
         <p>Business Solutions</p>
         <p>Aria is a top consultancy company specializing in business growth using online marketing and conversion optimization tactics</p>
-        <a href="#intro">Discover</a>
+        <div>
+          <a href="#intro" class="greenBtn">Discover</a>
+        </div>
       </div>
     </header>
 
     <main>
       <section id="intro">
-        <div>
+        <div class="intro-part-1">
           <div>
-            <div>Intro</div>
+            <div class="sectionName">Intro</div>
             <h2>We Offer Some Of The Best Business Growth Services In Town</h2>
             <p>Launching a new company or developing the market position of an existing one can be quite an overwhelming processs at times.</p>
             <blockquote>
-              <p>Our mission here at Aira is to get you through those tough moments relying on our team's expertise in starting and growing companies.</p>
+              <p><em>Our mission here at Aira is to get you through those tough moments relying on our team's expertise in starting and growing companies.</em></p>
               <p><strong>Louise Donovan - CEO</strong></p>
             </blockquote>
           </div>
@@ -59,19 +62,19 @@
             <img  loading="lazy" src="Images/girlOnSwing.jpg" alt="girlOnSwing">
           </div>
         </div>
-        <div>
-          <div class="hexagonBgImg">
-            <div><i class="fontAwesomeIcon fa-solid fa-binoculars"></i></div>
+        <div class="intro-part-2">
+          <div>
+            <div class="hexagonBgImg"><i class="fontAwesomeIcon fa-solid fa-binoculars"></i></div>
             <h3>Environment Analysis</h3>
             <p>The starting point of any success story is knowing your current position in the business environment</p>
           </div>
-          <div class="hexagonBgImg">
-            <div><i class="fontAwesomeIcon fa-solid fa-rectangle-list"></i></div>
+          <div>
+            <div class="hexagonBgImg"><i class="fontAwesomeIcon fa-solid fa-rectangle-list"></i></div>
             <h3>Development Planning</h3>
             <p>After completing the environmental analysis the next stage is to design and plan your development strategy</p>
           </div>
-          <div class="hexagonBgImg">
-            <div><i class="fontAwesomeIcon fa-solid fa-chart-pie"></i></div>
+          <div>
+            <div class="hexagonBgImg"><i class="fontAwesomeIcon fa-solid fa-chart-pie"></i></div>
             <h3>Execution & Evaluation</h3>
             <p>In this phase you will focus on executing the actions plan and evaluating the results after each marketing campaign</p>
           </div>
@@ -427,6 +430,24 @@
       <p>Copyright &copy; 2045 All rights reserved - By <a href="#">Inovatik</a></p>
     </footer>
 
-    
+    <script>
+      // for making header nav background visible when more than 200 y scrolled 
+      document.addEventListener('DOMContentLoaded', function () {
+        window.addEventListener('scroll',function(){          
+          let primaryNav = document.getElementById("primaryNavigation");
+          // console.log(primaryNav);
+          if(window.scrollY >=200){
+            primaryNav.classList.add('makeBgDarkGreen');
+          }else{
+            primaryNav.classList.remove('makeBgDarkGreen');
+          }
+                  
+        });
+      });
+  
+
+
+      
+    </script>
   </body>
 </html>
