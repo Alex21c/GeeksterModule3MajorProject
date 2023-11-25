@@ -1,23 +1,42 @@
 :root {
   --color-whitegrey: #fbfbfb;
+  --color-green: #14bf98;
 }
 *, ::before, ::after{
   padding:0;
   margin:0;
   box-sizing:border-box;
-  font-family: 'Open Sans', sans-serif;
+  
 }
 html{
   font-size:16px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1{
   font-family: 'Montserrat', sans-serif;
 }
+a{
+  color:white;
+  text-decoration: none;
+  font-size: .9rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
 .hexagonBgImg{
   background-image: url(Images/hexagon.svg);
   background-repeat: no-repeat;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.hexagonBgImg .fontAwesomeIcon{
+  font-size: .8rem;
+}
+
 .displayNone{
   display: none;
 }
@@ -26,37 +45,64 @@ body{
   overflow-x: hidden; 
 }
 /* header section  */
-body header{
+body header::before{
+  content: "";
   background-image: url(Images/headerBackground.jpg);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+  width: inherit;
+  height: inherit;
+  
+}
+body header{
   height: 150vh;
   width: 100%;
   position: relative;
 }
-body header::before{
-  content:"";
-  background: linear-gradient(to right, rgba(0,0,0,.2), rgba(0,0,0,.5));
-  width: 200rem;
-  height: 200rem;
-  position: relative;
-  top:0;
-  left: 0;
-
+body header div.shadowBox{
+  /* background: linear-gradient(to right, rgba(0,0,0,.2), rgba(0,0,0,.5)); */
+  background: linear-gradient(to bottom, black, white);
+  opacity: .8;
+  width: inherit;
+  height: inherit;
+  z-index: -1;
+  position: absolute;
 }
 header nav{
-  background-color: lightgreen;
-  
+  z-index: 22;
+  /* background-color: lightgreen; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:1rem 2rem;
+}
+header nav ul{
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
 }
 header nav ul li{
-  list-style:none;
-  display: inline;
+  list-style:none; 
+}
+header nav ul li.currentlyOnFocusNavItem a{
+  color:var(--color-green);
 }
 
 header nav a img.logo{
-  width: 3rem;
+  width: 7rem;
 }
+a.navAboutLink{
+  position: relative;
+}
+a.navAboutLink i{
+  position: absolute;
+  padding-left: .3rem;
+  top: 0.2rem;
+  font-size: .6rem;
+  opacity: .8;
+}
+
 
 
 /* img{
