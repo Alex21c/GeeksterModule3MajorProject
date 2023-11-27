@@ -1,0 +1,31 @@
+Winters have arrived, To achieve Financial Freedom, MERN stack developers like me are upskilling & working on projects as well as learning how to make responsive websites using HTML5, CSS3, JavaScript ES6. Officially this is the last week of Geekster MERN Stack Module #3 [1]
+
+Exclusively With You, i'm sharing glimpses of my responsive web project, have a look at it with beautiful smile on yours happy face!
+
+Hosted Link:
+https://alex21c.github.io/GeeksterModule3MajorProject/
+
+GitHub Repository Link:
+https://github.com/Alex21c/GeeksterModule3MajorProject.git
+
+
+Credits goes to following:
+1. My Mentor Geekster for providing me opportunity to become MERN Stack Developer and achieve my vision of Financial Freedom!
+
+2. My Educators for teaching me HTML5 | CSS3 :
++ Ankit Singh 
++ Akhil Sharma 
++ Aayush Sinha (https://lnkd.in/dPXApemX)
+
+3. My Educators for teaching me Data Structures & Algorithms:
++ Jitmanew Tyagi
++ Archit Aggarwal 
+
+4. Myself for perseverance and lifelong learning !
+
+EndNotes: 
+[1] Geekster MERN stack bootcamp is having 7 Modules, So far in the Module #1 i have learnt Java Programming Basics, in Module #2 i have practices and learned Data Structures and Algorithms, in Module #3 i have learnt Git | GitHub | Figma | Tailwind | HTML5 | CSS3. 
+Upcoming modules are as follows: 
+in the Module #4 i will learn about JavaScript, Module #5 about React, Module #6 is about NodeJs | ExpressJs | MongoDb, Module #7 is Career Preparation
+
+#webdevelopment | #html5 | #css3 | #mernstack | #webpage | #userinterfacedesign | #responsivedesign | #fullstackdeveloper | #webprojects | #frontend | #youtube | #vscode | #github | #git | #alex21c
