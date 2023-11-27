@@ -430,6 +430,9 @@
         </form>
 
       </section> <!-- Contact Section -->
+      <div id="backToTop" class="visibilityHidden">
+        <a href="#home"><i class="fa-regular fa-chevron-up"></i></a>
+      </div>
     </main>
     <footer id="footer">
       <div class="wrapperFooterContent">
@@ -466,13 +469,17 @@
 
     <script>
       // for making header nav background visible when more than 200 y scrolled 
+      // also for handling visibilty of back to top
       document.addEventListener('DOMContentLoaded', function () {
         window.addEventListener('scroll',function(){          
           let primaryNav = document.getElementById("primaryNavigation");
+          let backToTop = document.getElementById("backToTop");          
           // console.log(primaryNav);
           if(window.scrollY >=200){
             primaryNav.classList.add('makeBgDarkGreen');
+            backToTop.classList.remove('visibilityHidden');
           }else{
+            backToTop.classList.add('visibilityHidden');
             primaryNav.classList.remove('makeBgDarkGreen');
           }
                   

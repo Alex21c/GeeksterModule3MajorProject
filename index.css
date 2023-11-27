@@ -3,6 +3,7 @@
   --color-whitegrey-2: #dfe5ec;
   --color-green: #14bf98;
   --color-dark-green :#113448;
+  --color-dark-green-3 :#13aa87;
   --color-slate-gray: #484a46;
   --color-slate-gray-2: #7b7e85;
   --color-light-gray: #787976;
@@ -29,7 +30,9 @@
   background-color:var(--color-dark-green);
   z-index: 999;
 }
-
+.visibilityHidden{
+  visibility: hidden;
+}
 html{
   font-size:16px;
   font-family: 'Open Sans', sans-serif;
@@ -939,6 +942,23 @@ section#intro div.intro-part-1> div:last-child:hover img{
     text-decoration: underline;
   }
 
+  main div#backToTop a{
+    background-color: var(--color-green);
+    padding: .3rem .7rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin:1rem;
+    transition:.3s;
+    z-index: 999;
+    opacity: .3;
+  }
+  main div#backToTop a:hover{
+    background-color: var(--color-dark-green-3);
+    opacity: 1;
+  }
 
 /***
  * Media Queries  
