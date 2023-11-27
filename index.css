@@ -1148,6 +1148,28 @@ section#intro div.intro-part-1> div:last-child:hover img{
   }
 }
 
+@media screen and (max-width:630px){
+  section#projects ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  section#projects ul li a{
+    display: block;
+  }
+  div.testimonialHeader p{
+    width: unset;
+  }
+  section#servicesSectionWithTwoBigImages >div:nth-child(3) ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+  section#servicesSectionWithTwoBigImages{
+    grid-template-rows: repeat(4, 27rem);
+  }
+}
+
 @media screen and (max-width:580px){
   section#intro div.intro-part-1> div:last-child img{
     width:27rem;
@@ -1163,4 +1185,108 @@ section#intro div.intro-part-1> div:last-child:hover img{
   footer#footer{
     padding: 3rem 5%;
   }   
+}
+
+@media screen and (max-width:500px){
+  section#callMe div.left-child-callMe{
+    max-width: unset;
+    padding:0 5%;
+  }
+  form{
+    padding:0 5%;
+    
+  }
+  section#about div.wrapperAbout p.ourGoal,
+  section#about div.wrapperAbout div.wrapperServiceName h2{
+    max-width: unset;
+  }
+  section#about div.wrapperAbout div.wrapperMilestones{
+    flex-wrap: wrap;
+    column-gap:1.5rem;
+    row-gap: 0;
+  }
+  section#about{
+    padding-bottom: 0;
+  }
+  section#callMe, section#contact{
+    padding:5rem 5%;
+  }
+  :root{
+    --max-width-project:9rem;
+    --max-height-project:8rem;
+  }
+  section#projects div.wrapperProjects div.project h3{
+    font-size: 1rem;
+  }
+  section#about div.wrapperSectionImg img{
+    width: 20rem;
+  }
+  section#intro div.intro-part-1> div:last-child img{
+    width: 23rem;
+  }
+  section#servicesSectionWithTwoBigImages{
+    grid-template-rows: repeat(4, 30rem);
+  }
+  section#teamOfConsultants div.wrapperConsultants{
+    gap:1rem;
+  }
+  header div.heroContent p:first-child{
+    font-size: 3.5rem;
+    line-height: 3.7rem;
+  }
+  section#teamOfConsultants div.wrapperConsultants {
+    grid-template-columns: 11rem 11rem;
+  }
+  section#teamOfConsultants div.wrapperConsultants div.consultant{
+    gap:0.3rem;
+  }
+  section#teamOfConsultants div.wrapperConsultants div.consultant strong.designation{
+    font-size:.8rem;
+  }
+  section#servicesSectionWithTwoBigImages>div:nth-child(2){
+    padding:0 5%;
+  }
+  section#servicesSectionWithTwoBigImages>div:nth-child(2) h2{
+    max-width: unset;
+  }
+  section#servicesSectionWithTwoBigImages div.wrapperBusinessServicesForCompanies>div{
+    padding:0 7%;
+  }
+  section#servicesSectionWithTwoBigImages >div:nth-child(2) ul li p{
+    width: unset;
+  }
+  
+}
+@media screen and (max-width:400px){
+  section#intro div.intro-part-1> div:last-child img{
+    width: 100%;
+  }
+  section#teamOfConsultants div.wrapperConsultants{
+    grid-template-columns: 8rem 8rem;
+  }
+  footer div.wrapperFooterContent p.aboutAria,
+  footer div.wrapperFooterContent h2{
+    width: unset;    
+  }
+  header div.heroContent p:first-child{
+    font-size: 3rem;
+    line-height: 3.3rem;
+  }
+  form{
+    width: 19rem;
+  }
+  h2 {
+    font-size: 1.4rem;    
+    line-height: 1.5rem;
+  }
+
+  p, ul>li{
+    font-size: .9rem;
+  }
+  h3,
+  section#services div.wrapperServices div.service div.serviceBody h3,
+  section#servicesSectionWithTwoBigImages >div:nth-child(2) h3{
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+  }
 }
